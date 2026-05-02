@@ -137,18 +137,30 @@ h2 {
 }
 
 /* ── S5: FEATURED ── */
+.featured-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-self: end;
+  width: 100%;
+  max-width: 480px;
+}
+
+.featured-photo {
+  border-radius: 45% 55% 40% 60% / 55% 40% 60% 45%;
+  width: 100%;
+  max-width: 100%;
+}
+
 .featured-logos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 3rem;
-  justify-self: end;
 }
 
 .featured-logos img {
   height: auto;
   width: 100%;
-  max-width: 320px;
   opacity: 0.7;
 }
 
@@ -247,7 +259,6 @@ h2 {
 
   .section-img,
   #s-form .image-wrap {
-    order: -1;
     justify-self: center;
     max-width: 100%;
   }
@@ -255,6 +266,7 @@ h2 {
 
   nav ul { display: none; }
   h2 { max-width: 100%; }
+  .featured-right { max-width: 100%; justify-self: center; }
   .featured-logos { justify-self: start; max-width: 100%; }
   .featured-logos img { max-width: 100%; }
 }

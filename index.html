@@ -6,109 +6,8 @@
   <title>CL[AI] — Soft Mode</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:wght@500&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background-color: #ede5de;
-      color: #1a1a1a;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 2.5rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    nav .brand { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 1.1rem; letter-spacing: 0.05em; }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-    }
-
-    nav ul li a {
-      font-family: 'Libre Franklin', sans-serif;
-      font-weight: 500;
-      text-decoration: none;
-      color: inherit;
-      letter-spacing: 0.08em;
-    }
-
-    nav ul li a:hover { text-decoration: underline; }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 4rem 2.5rem;
-      max-width: 900px;
-    }
-
-    h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3.5rem, 10vw, 7rem);
-      font-weight: 400;
-      line-height: 0.95;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-      margin-bottom: 2.5rem;
-    }
-
-    h1 em {
-      font-style: normal;
-      text-decoration: line-through;
-      text-decoration-thickness: 3px;
-    }
-
-    p {
-      font-family: 'Libre Franklin', sans-serif;
-      font-weight: 500;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      max-width: 38ch;
-      color: #444;
-      margin-bottom: 3rem;
-    }
-
-    .cta {
-      display: inline-block;
-      border: 1.5px solid #1a1a1a;
-      padding: 0.75rem 2rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: inherit;
-      transition: background 0.15s, color 0.15s;
-    }
-
-    .cta:hover {
-      background: #1a1a1a;
-      color: #ede5de;
-    }
-
-    footer {
-      padding: 1.5rem 2.5rem;
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #888;
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
 
@@ -122,19 +21,102 @@
     </ul>
   </nav>
 
-  <main>
-    <h1>Hello,<br>World<em>.</em></h1>
-    <p>
-      Clay is a very intelligent material.<br>
-      A new programming language for AI — where sculptural form becomes interface, and the object becomes the prompt.
-    </p>
-    <a class="cta" href="#">Enter the language &rarr;</a>
-  </main>
+  <!-- S1: CLAY IS A VERY INTELLIGENT MATERIAL -->
+  <section id="s-hero" class="two-col">
+    <div>
+      <h2>Clay is a very intelligent material</h2>
+      <p class="caption">A new programming language for AI</p>
+    </div>
+    <img class="section-img" src="assets/images/hero.png" alt="Clay sculpture" />
+  </section>
+
+  <!-- S2: WE ARE STILL PROGRAMMING INTELLIGENCE WITH WORDS -->
+  <section id="s-words" class="two-col">
+    <div>
+      <h2>We are still programming intelligence with words</h2>
+      <p class="caption">Language constrains<br>Human intent.</p>
+    </div>
+    <img class="section-img" src="assets/images/intelligence-with-words.png" alt="Words dispersing into points" />
+  </section>
+
+  <!-- S3: WHAT IF FORM BECAME CODE -->
+  <section id="s-form" class="two-col">
+    <div>
+      <h2>What if form became code</h2>
+    </div>
+    <div class="image-wrap">
+      <img class="section-img" src="assets/images/curvature-density-topology.png" alt="Clay form with curvature, density and topology annotations" />
+    </div>
+  </section>
+
+  <!-- S4: CLAI -->
+  <section id="s-clai">
+    <div>
+      <h2>CL[AI]</h2>
+      <p class="caption">A material<br>programming language</p>
+      <p class="caption caption--upper">The object<br>becomes<br>the prompt</p>
+    </div>
+    <img class="section-img" src="assets/images/material-language.png" alt="Clay object transforming into digital outputs" />
+  </section>
+
+  <!-- S5: TEAM -->
+  <section id="s-team" class="two-col">
+    <div class="team-list">
+      <h2>The team</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/zhiheng-hanji-xu" target="_blank" rel="noopener">Hanji Xu</a></li>
+        <li><a href="https://www.linkedin.com/in/rajvi-patil-791960232" target="_blank" rel="noopener">Rajvi Patil</a></li>
+        <li><a href="https://www.linkedin.com/in/thomknoe" target="_blank" rel="noopener">Thomas Knoepffler</a></li>
+        <li><a href="https://www.linkedin.com/in/margaux-reynolds-30291b77" target="_blank" rel="noopener">Margaux Reynolds</a></li>
+        <li><a href="https://www.linkedin.com/in/pedro-sacramento-1b99b05b" target="_blank" rel="noopener">Pedro Sacramento</a></li>
+      </ul>
+    </div>
+    <img class="section-img" src="assets/images/team.jpg" alt="CLAI team" />
+  </section>
+
+  <!-- S6: THIS IS NOT AN INTERFACE -->
+  <section id="s-language" class="two-col">
+    <div>
+      <h2>This is not an interface&mdash; this is a language</h2>
+    </div>
+    <div class="right">
+      <div class="cta-pair">
+        <div class="cta-block">
+          <p>Build the first material<br>programming system</p>
+          <a class="cta" href="#">Get involved &rarr;</a>
+        </div>
+        <div class="cta-block">
+          <p>Research partnership<br>6–12 months</p>
+          <a class="cta" href="#">Partner with us &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7: IN THE FIELD -->
+  <section id="s-featured" class="two-col">
+    <div>
+      <h2>In the field</h2>
+      <p class="caption">Winner of the Tenstorrent Prize at MIT Hardmode Hackathon. Sponsored by Anthropic to exhibit at upcoming Code with Claude events &mdash; San Francisco, London &amp; Tokyo.</p>
+    </div>
+    <div class="featured-logos">
+      <a href="https://hardmode.media.mit.edu/" target="_blank" rel="noopener" aria-label="MIT Hardmode Hackathon">
+        <img src="assets/images/mit-hardmode.svg" alt="MIT Hardmode" />
+      </a>
+      <img src="assets/images/code-with-claude.svg" alt="Code with Claude" />
+    </div>
+  </section>
 
   <footer>
-    <span>CL[AI] &mdash; Soft Mode</span>
-    <span>Sculpting Intelligence</span>
+    <span class="brand">CL[AI]</span>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">System</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">Partner</a></li>
+    </ul>
   </footer>
+
 
 </body>
 </html>

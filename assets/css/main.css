@@ -106,6 +106,7 @@ h2 {
 }
 
 .section-img--left { justify-self: start; }
+.section-img--text { width: 60%; max-width: 480px; }
 
 /* ── S3: FORM ── */
 #s-form .image-wrap {

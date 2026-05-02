@@ -16,6 +16,10 @@
   --size-nav: 1.2rem;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg);
   color: var(--ink);
@@ -255,6 +259,7 @@ a.featured-name:hover { text-decoration: underline; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
+  :root { --pad: 1.25rem; }
   section { padding: 3rem var(--pad); }
 
   .two-col,
@@ -271,5 +276,8 @@ a.featured-name:hover { text-decoration: underline; }
   h2 { max-width: 100%; }
   .featured-logos { gap: 2rem; }
   .featured-logos img { max-height: 36px; }
+
+  #s-form .labels { display: none; }
+  .cta-pair { grid-template-columns: 1fr; }
 }
 
